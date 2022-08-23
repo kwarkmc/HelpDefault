@@ -1,0 +1,17 @@
+<html>
+   <body>
+   <p style="text-align: center;">
+    <img src="{{url_for('static', filename = '/defal.jpg')}}" width="200" sizes="200" alt="LOGO"/>
+   </p>
+      <form action = "http://172.17.96.57:8000/uploader" method = "POST"
+         enctype = "multipart/form-data">
+         <p style="text-align: center;">
+         <input type = "file" name = "file" />
+         <input type = "submit"/>
+            </p>
+                  <p style="text-align: center;">
+         (흰 배경에 물건을 놓고 사진을 찍으면 인식이 잘 됩니다!)
+            </p>
+      </form>   
+   </body>
+</html>
